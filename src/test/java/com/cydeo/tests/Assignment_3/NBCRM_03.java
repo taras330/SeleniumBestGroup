@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class NBCRM_3 {
+public class NBCRM_03 {
     /*
     TC # 3 Marketing11 login to Next Base CRM with valid data
    1. GIVEN Open website /
