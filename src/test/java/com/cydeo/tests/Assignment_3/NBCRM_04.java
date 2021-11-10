@@ -31,7 +31,7 @@ User should see a message : ""Incorrect login or password."" "
 
         //Open Chrome Browser
         WebDriver driver = WebDriverFactory.getDriver("chrome");
-        driver.manage().window().maximize();
+       driver.manage().window().maximize();
 
         // 1.Open login pane on browser
         String url = "https://login2.nextbasecrm.com";
