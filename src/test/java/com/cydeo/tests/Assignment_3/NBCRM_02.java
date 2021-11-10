@@ -62,6 +62,7 @@ public class NBCRM_02 {
 
         Thread.sleep(3000);
 
+        Thread.sleep(1000);
         driver.quit();
 
     }
