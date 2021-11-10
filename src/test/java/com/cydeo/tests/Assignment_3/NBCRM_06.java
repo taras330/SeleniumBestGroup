@@ -15,32 +15,8 @@ public class NBCRM_06 {
     ->> 5. User should see a message
 "Incorrect login or password"
      */
+
     static WebDriver driver = WebDriverFactory.getDriver("chrome");
-
-    public static void OpenLogin(){
-        driver.manage().window().maximize();
-        String url = "https://login2.nextbasecrm.com/";
-        driver.get(url);
-    }
-
-    public static void EnterTextIntoInputBox(String inputBox, String Text){
-        driver.findElement(By.name(inputBox)).sendKeys(Text);
-    }
-
-    public static void LogInClick(){
-        driver.findElement(By.xpath("//*[@value='Log In']")).click();
-    }
-
-    public static void AssertIncorrectLoginMessage(String expectedErrMsg){
-        String actualErrorMessage = driver.findElement(By.xpath
-                ("//div[normalize-space(text()) = 'Incorrect login or password']")).getText();
-        System.out.println(actualErrorMessage);
-        if (actualErrorMessage.contains(expectedErrMsg)){
-            System.out.println("PASSED: user was not able to Log In and see \"Incorrect login or password\" message");
-        } else{
-            System.out.println("FAIL: user was able to Log In or did not see \"Incorrect login or password\" message");
-        }
-    }
 
     public static void main(String[] args) throws InterruptedException {
 
